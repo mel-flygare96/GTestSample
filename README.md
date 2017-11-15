@@ -25,3 +25,12 @@ MyProjectTests)
 18. If you install VS Enterprise, you can click the play button at the top left of the test explorer to run tests automatically
 on build.
 
+# Steps to Modify User Macro
+1. Pull the changes from Git
+2. Go to view -> other windows -> property manager
+3. Click on the GTest dropdown, then on the Debug | x64 dropdown
+4. Right click on MyProjectTestPropertySheet
+5. Click properties
+6. Under User Macros on the left, double-click on the value for the GTest macro. Edit the path to point to your main directory where
+you installed googletest. For example, I installed placed googletest into Documents/GoogleTestAPI. This should be a full directory path.
+7. Click Apply. When you rebuild the solution, it should build.
